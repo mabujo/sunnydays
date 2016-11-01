@@ -69,6 +69,7 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3">
 								  <h2>Trends</h2>
+								  <canvas id="sunChart" width="600" height="600"></canvas>
 							</div>
 						</div>
 				</div>

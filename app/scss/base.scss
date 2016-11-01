@@ -40,6 +40,7 @@ h2 {
 body {
 	color: $offWhite;
 	@include font3();
+	-webkit-font-smoothing: antialiased;
 }
 
 #weatherCondition, .wi-day-sunny {
@@ -54,11 +55,13 @@ body {
 #section1 {
 	background-color: $blue;
 }
-
+#section2 {
+	background-color: $yellow;
+}
 #section3 {
 	background-color: $green;
 }
-#section2, #sunnyCount, #weatherCondition, .wi-day-sunny {
+#sunnyCount, #weatherCondition, .wi-day-sunny {
 	color: $yellow;
 }
 
