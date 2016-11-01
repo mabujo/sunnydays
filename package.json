@@ -1,0 +1,22 @@
+{
+  "name": "sunnydays",
+  "version": "0.0.1",
+  "description": "Is it sunny in Marbella? For Marbella In Style",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabujo/sunnydays.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Mabujo LTD",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mabujo/sunnydays/issues"
+  },
+  "homepage": "https://github.com/mabujo/sunnydays#readme"
+}
