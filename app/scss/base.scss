@@ -37,14 +37,29 @@ h2 {
 	font-size: calc(2rem + 0.5vw);
 }
 
+#enter-competition {
+	@include font2();
+	font-size: calc(1.8rem + 0.2vw);
+}
+
 body {
 	color: $offWhite;
 	@include font3();
 	-webkit-font-smoothing: antialiased;
 }
 
-#weatherCondition, .wi-day-sunny {
-	font-size: calc(2rem + 0.5vw);
+#weatherCondition {
+	font-size: calc(3rem + 5vw);
+}
+
+#fp-nav ul li .fp-tooltip.right, #weatherCondition, #competition-form {
+	@include font2();
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Colours */
@@ -52,11 +67,20 @@ body {
 	color: $offWhite;
 }
 
+#fp-nav ul li a span {
+	background-color: #ececec;
+}
+
+#fp-nav ul li a.active span {
+	background-color: $offWhite;
+}
+
 #section1 {
 	background-color: $blue;
+	position: relative;
 }
 #section2 {
-	background-color: $yellow;
+	background-color: $red;
 }
 #section3 {
 	background-color: $green;
@@ -68,6 +92,20 @@ body {
 /* Position */
 h1, h2, #weatherCondition, .wi-day-sunny {
 	@include centerText();
+}
+
+#enter-competition {
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+#enter-competition a {
+	border: 3px solid #f3f3f3;
+	padding: 10px;
+	color: $offWhite;
+	font-weight: normal;
 }
 
 footer {

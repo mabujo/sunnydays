@@ -23,7 +23,7 @@
 			<div class="section" id="section1">
 				<div class="container">
 						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
+							<div class="col-md-8 col-md-offset-2">
 								<h1>Is it sunny in Marbella?</h1>
 									<div id="weatherCondition">
 										<div id="sunnyYes">Yes!</div>
@@ -32,6 +32,9 @@
 								<h2>There have been <span id="sunnyCount">278</span> sunny days so far</h2>
 							</div>
 						</div>
+				</div>
+				<div id="enter-competition">
+					<a href="#competition" title="Enter competition">Enter our competition!</a>
 				</div>
 			</div>
 			<!-- Second slide -->
