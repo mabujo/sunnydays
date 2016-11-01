@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    John Henson -- Developer -- @mabujo_ltd
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, gulp, bootstrap
