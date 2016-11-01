@@ -1,16 +1,22 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        //Navigation
-        anchors:['Weather', 'Enter'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Weather', 'Enter'],
+	/* fullpage init */
+	$('#fullpage').fullpage({
+		//Navigation
+		anchors:['Weather', 'Enter'],
+		navigation: true,
+		navigationPosition: 'right',
+		navigationTooltips: ['Weather', 'Enter'],
 
-        //Accessibility
-        keyboardScrolling: true,
-        //sectionsColor : ['#ccc', '#fff'],
-
-
-    });
+		//Accessibility
+		keyboardScrolling: true,
+		verticalCentered: false
+		//sectionsColor : ['#ccc', '#fff'],
+	});
 });
 
+/* form submit */
+$(document).on('submit', 'form', function(event) {
+	event.preventDefault();
+	var formData = $(this).serialize();
+	console.log(formData);
+});

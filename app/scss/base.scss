@@ -1,5 +1,16 @@
-body {
+/*
+  Colours
+ */
 
+$blue: #5BC0EB;
+$yellow: #FDE74C;
+$green: #9BC53D;
+$red: #E55934;
+$orange: #FA7921;
+$offWhite: #fcfcfc;
+
+body {
+	color: $offWhite;
 }
 
 footer {
@@ -15,9 +26,13 @@ footer {
 }
 
 #section1 {
-	background-color: red;
+	background-color: $blue;
 }
 
 #section2 {
-	background-color: blue;
+	background-color: $yellow;
+}
+
+h1 {
+	text-align: center;
 }

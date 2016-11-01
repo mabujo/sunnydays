@@ -24,7 +24,7 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(autoPrefix({browsers: ['last 2 versions', '> 2%', 'ie 8', 'Firefox ESR']}))
         .pipe(concat('styles.css'))
-        //.pipe(uglifycss())
+        .pipe(uglifycss())
         .pipe(gulp.dest("dist/css/"))
 });
 // compile js
@@ -33,10 +33,12 @@ gulp.task('js', function() {
         "node_modules/jquery/dist/jquery.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "node_modules/fullpage.js/dist/jquery.fullpage.js",
+        "lib/BootstrapFormHelpers/js/lang/en_US/bootstrap-formhelpers-countries.en_US.js",
+        "lib/BootstrapFormHelpers/js/bootstrap-formhelpers-countries.js",
         "app/js/*.js"
         ])
         .pipe(concat('app.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest("dist/js/"))
 });
 // min images
