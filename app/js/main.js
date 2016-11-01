@@ -2,10 +2,10 @@ $(document).ready(function() {
 	/* fullpage init */
 	$('#fullpage').fullpage({
 		//Navigation
-		anchors:['Weather', 'Enter'],
+		anchors:['weather', 'enter', 'trends'],
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Weather', 'Enter'],
+		navigationTooltips: ['Weather', 'Enter', 'Trends'],
 
 		//Accessibility
 		keyboardScrolling: true,

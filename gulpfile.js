@@ -12,13 +12,14 @@ var reload      = browserSync.reload;
 // copy fonts
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'))
+  .pipe(gulp.dest('dist/font'))
 })
 // compile css
 gulp.task('sass', function() {
     return gulp.src([
         "node_modules/bootstrap/dist/css/bootstrap.css",
         "node_modules/fullpage.js/dist/jquery.fullpage.css",
+        "node_modules/weathericons/css/weather-icons.css",
         "app/scss/base.scss"
         ])
         .pipe(sass())
@@ -35,6 +36,7 @@ gulp.task('js', function() {
         "node_modules/fullpage.js/dist/jquery.fullpage.js",
         "lib/BootstrapFormHelpers/js/lang/en_US/bootstrap-formhelpers-countries.en_US.js",
         "lib/BootstrapFormHelpers/js/bootstrap-formhelpers-countries.js",
+        "node_modules/chart.js/dist/Chart.js",
         "app/js/*.js"
         ])
         .pipe(concat('app.js'))

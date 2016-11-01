@@ -1,5 +1,5 @@
 /*
-  Colours
+  Colour definitions
  */
 
 $blue: #5BC0EB;
@@ -9,8 +9,62 @@ $red: #E55934;
 $orange: #FA7921;
 $offWhite: #fcfcfc;
 
+
+/* Fonts definitions */
+@mixin font1() {
+	font-family: 'Didact Gothic', sans-serif;
+}
+@mixin font2() {
+	font-family: 'Montserrat', sans-serif;
+}
+@mixin font3() {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Other mixins */
+@mixin centerText() {
+	text-align: center;
+}
+
+/* Fonts */
+h1 {
+	@include font2();
+	font-size: calc(3rem + 2vw);
+}
+
+h2 {
+	@include font2();
+	font-size: calc(2rem + 0.5vw);
+}
+
 body {
 	color: $offWhite;
+	@include font3();
+}
+
+#weatherCondition, .wi-day-sunny {
+	font-size: calc(2rem + 0.5vw);
+}
+
+/* Colours */
+body {
+	color: $offWhite;
+}
+
+#section1 {
+	background-color: $blue;
+}
+
+#section3 {
+	background-color: $green;
+}
+#section2, #sunnyCount, #weatherCondition, .wi-day-sunny {
+	color: $yellow;
+}
+
+/* Position */
+h1, h2, #weatherCondition, .wi-day-sunny {
+	@include centerText();
 }
 
 footer {
@@ -23,16 +77,4 @@ footer {
 	font-size: 1em;
 	padding: 8px;
 	line-height: 1em;
-}
-
-#section1 {
-	background-color: $blue;
-}
-
-#section2 {
-	background-color: $yellow;
-}
-
-h1 {
-	text-align: center;
 }
